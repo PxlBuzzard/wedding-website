@@ -184,7 +184,7 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Daniel and Nikky's Wedding",
 
             // Event start date
             start: new Date('Nov 27, 2017 10:00'),
