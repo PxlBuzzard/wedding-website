@@ -7,7 +7,8 @@
 @import "partials/typography";
 @import "partials/buttons";
 @import "partials/colors";
-@import "partials/layout";
+
+$section-padding: 40px 0;
 
 /* ==========================================================================
 Global Styles
@@ -39,6 +40,7 @@ a:hover, a:focus {
 body {
   font-family: $sans-serif;
   font-weight: $light;
+  background: $section-light;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
   //fix for iOS
@@ -52,6 +54,12 @@ ul, ol {
 }
 ul li {
   list-style: none;
+}
+section:nth-child(odd) {
+  background: $section-light;
+}
+section:nth-child(even) {
+  background: $section-dark;
 }
 section .header {
   padding-bottom: 30px;
@@ -253,6 +261,7 @@ Hero
 .hero {
   min-height: 750px;
   background: url('../img/hero-min.jpg') center center;
+  background: url('http://placekitten.com/3200/2136') center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -761,13 +770,13 @@ Google map
 #map-content {
   margin-top: 40px;
   padding: 50px 60px;
-  background: #fff;
+  background: $section-dark;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
   transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
 }
 #btn-show-content {
   padding: 20px;
-  background: #fff;
+  background: $section-light;
   cursor: pointer;
   display: inline-block;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
@@ -836,6 +845,7 @@ RSVP form
         -webkit-border-radius: 6px;
         border-radius: 6px;
         border: none;
+        color: $section-dark;
       }
       input::-webkit-input-placeholder {
         color: $form-placeholder;
@@ -849,6 +859,9 @@ RSVP form
       input:-ms-input-placeholder {
         color: $form-placeholder;
       }
+      input::placeholder {
+        color: $form-placeholder;
+      }
     }
   }
 }
@@ -857,6 +870,7 @@ RSVP form
 Footer
 ========================================================================== */
 footer {
+  background: $section-dark;
   .content {
     border-top: 1px solid $keyline-color;
     padding-bottom: 20px;
@@ -898,4 +912,5 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+  background: $section-light;
 }

@@ -121,8 +121,8 @@
 
     // Make sure we have the necessary event data, such as start time and event duration
     var validParams = function(params) {
-        return params.data !== undefined && params.data.start !== undefined &&
-            (params.data.end !== undefined || params.data.duration !== undefined);
+        return params.data != undefined && params.data.start != undefined &&
+            (params.data.end != undefined || params.data.duration != undefined);
     };
 
     var generateMarkup = function(calendars, clazz, calendarId) {
@@ -137,7 +137,7 @@
         });
 
         result.className = 'add-to-calendar';
-        if (clazz !== undefined) {
+        if (clazz != undefined) {
             result.className += (' ' + clazz);
         }
 
