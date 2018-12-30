@@ -175,7 +175,7 @@ $(document).ready(function () {
             address: 'WithinSodo, Seattle WA',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues contact Britta Johnson at 123-456-7890."
+            description: "We can't wait to see you on our big day. For any queries or issues contact Britta Jackson at 123-456-7890."
         }
     });
 
