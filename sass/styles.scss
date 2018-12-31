@@ -55,10 +55,10 @@ ul, ol {
 ul li {
   list-style: none;
 }
-section:nth-child(odd) {
+section:nth-child(2n+3) {
   background: $section-light;
 }
-section:nth-child(even) {
+section:nth-child(2n+2) {
   background: $section-dark;
 }
 section .header {
@@ -221,7 +221,6 @@ Navigation
 }
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
   -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out
 }
@@ -234,7 +233,6 @@ Navigation
 .nav-toggle.active span:before {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg)
 }
@@ -242,7 +240,6 @@ Navigation
   top: 10px;
   -moz-transform: translatey(-10px) rotate(-45deg);
   -ms-transform: translatey(-10px) rotate(-45deg);
-  -o-transform: translatey(-10px) rotate(-45deg);
   -webkit-transform: translatey(-10px) rotate(-45deg);
   transform: translatey(-10px) rotate(-45deg)
 }
@@ -260,11 +257,10 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/hero-min.jpg') center center;
-  background: url('http://placekitten.com/3200/2136') center center !important;
+  background: url('../img/eng_pics/image15.jpg') center center;
+  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: relative;
 
@@ -412,8 +408,14 @@ Intro
 #intro {
   padding-top: 40px;
   img {
-    width: 100%;
-    height: auto;
+    // width: 100%;
+    height: 500px;
+  }
+  img.nikky {
+    margin-top: 100px;
+  }
+  img.daniel {
+    height: 600px;
   }
 }
 #intro p {
@@ -588,7 +590,6 @@ Features-stack
     width: 100%;
     height: auto;
     -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
@@ -612,7 +613,6 @@ Features-stack
       height: 100%;
       background-color: rgba($white-color, 0.5);
       -moz-transition: all 300ms ease-in-out;
-      -o-transition: all 300ms ease-in-out;
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out;
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -632,7 +632,6 @@ Features-stack
   .blog-img-wrap:hover img, .blog-img-wrap:focus img {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
@@ -673,7 +672,6 @@ Engagement Pics
     max-height: 590px;
     max-width: 394px;
     -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
@@ -688,7 +686,6 @@ Engagement Pics
     height: 100%;
     background-color: rgba(255, 255, 255, 0.5);
     -moz-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -705,7 +702,6 @@ Engagement Pics
   .img-wrap:hover img, .img-wrap:focus img {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
   .img-wrap:hover .overlay, .img-wrap:focus .overlay {
@@ -894,7 +890,6 @@ footer {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
   .to-top-wrapper .to-top:hover {
