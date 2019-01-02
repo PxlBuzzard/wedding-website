@@ -257,7 +257,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/eng_pics/image15.jpg') center center;
+  background: url('../img/eng_pics/image79.jpg') center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -295,11 +295,11 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: rgba(55, 36, 40, .6) !important;
+  background: rgba(36, 36, 36, .6);
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: rgba(36, 36, 36, .88);
   z-index: 999;
   width: 100%;
 }
@@ -379,15 +379,17 @@ header {
 }
 
 /* ==========================================================================
-Social share buttons
-========================================================================== */
-.share-bar {
-  margin-top: 20px;
-}
-
-/* ==========================================================================
 Intro
 ========================================================================== */
+.flowers {
+  position: absolute;
+  bottom: 0;
+  background: repeat-x url('../img/flowers2.png');
+  background-size: 1000px 100px;
+  width: 1000px;
+  height: 100px;
+}
+
 .intro span.icon {
   font-size: 40px;
   color: $accent-color;
@@ -406,6 +408,15 @@ Intro
 }
 
 #intro {
+  //position: absolute;
+  //bottom: 0;
+  background: repeat-x url('../img/flowers2.png');
+  background-size: 291px 100px;
+  background-position: bottom;
+  //width: 1000px;
+  //height: 100px;
+
+
   padding-top: 40px;
   img {
     // width: 100%;

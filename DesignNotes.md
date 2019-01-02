@@ -14,7 +14,7 @@ Parking notes
 
 ## Photos
 
-Easy upload for Nikky
+Add some pictures of Lionel.
 
 ## Registry
 
