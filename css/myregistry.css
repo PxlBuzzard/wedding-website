@@ -1,0 +1,691 @@
+/*------ Dialog Panel  -----------------------------------------------------------------------------------------------------*/
+.mrw_dialogpanel
+{
+    width: 800px;
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #cccccc;
+    background: #333;
+    margin: auto;
+    position: relative;
+    font-size: 12px;
+    font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+    color: #3a3c41;
+}
+
+.mrw_dialogpanel_no_width
+{
+    -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid #cccccc;
+    background: #333;
+    margin: auto;
+    position: relative;
+}
+.mrw_dialogpanel .mrw_button.gray, .mrw_button.gray.disabled {
+    background: #fff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255,255,255,1)),color-stop(100%,rgba(238,238,238,1)));
+    background: -webkit-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+    background: -o-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+    background: -ms-linear-gradient(top,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%);
+    border: 1px solid #dcdcdc;
+    color: #497cb5;
+}
+
+.mrw_dialogpanel .mrw_button {
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mrw_dialogpanel .mrw_button.blue:hover {
+    background: #4372a8;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,#4372a8 0%,#5c98dd 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#4372a8),color-stop(100%,#5c98dd));
+    background: -webkit-linear-gradient(top,#4372a8 0%,#5c98dd 100%);
+    background: -o-linear-gradient(top,#4372a8 0%,#5c98dd 100%);
+    background: -ms-linear-gradient(top,#4372a8 0%,#5c98dd 100%);
+    background: linear-gradient(to bottom,#4372a8 0%,#5c98dd 100%);
+}
+.mrw_dialogpanel .mrw_button.blue, .mrw_button.blue.disabled {
+    background-color: #5690d0;
+    background: #5c98dd;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,#5c98dd 0%,#4372a8 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#5c98dd),color-stop(100%,#4372a8));
+    background: -webkit-linear-gradient(top,#5c98dd 0%,#4372a8 100%);
+    background: -o-linear-gradient(top,#5c98dd 0%,#4372a8 100%);
+    background: -ms-linear-gradient(top,#5c98dd 0%,#4372a8 100%);
+    background: linear-gradient(to bottom,#5c98dd 0%,#4372a8 100%);
+    border: 1px solid #5690d0;
+    color: #fff;
+}
+.mrw_dialogpanel .mrw_button:hover {
+    text-decoration: none;
+}
+.mrw_dialogpanel .w100
+{
+    width: 100%;
+}
+
+.mrw_dialogpanel .w90
+{
+    width: 90%;
+}
+
+.mrw_dialogpanel .w75
+{
+    width: 75%;
+}
+
+.mrw_dialogpanel .w50
+{
+    width: 50%;
+}
+
+.mrw_dialogpanel .w25
+{
+    width: 25%;
+}
+#pnlEventInfo table > tbody > tr > td {
+    vertical-align: top;
+    padding: 5px 0;
+}
+.mrw_dialogpanel .mrw_color_blue {
+    color: #4372a8;
+}
+.mrw_dialogpanel.standard
+{
+    width: 800px;
+}
+.mrw_dialogpanel.sbig
+{
+    width: 900px;
+}
+.mrw_dialogpanel.small
+{
+    width: 670px;
+}
+
+.mrw_dialogpanel.mini
+{
+    width: 540px;
+}
+.mrw_dialogpanel.xsmall
+{
+    width: 320px;
+}
+.mrw_dialogpanel.checklist
+{
+    width: 435px;
+}
+.mrw_dialogpanel.youtube
+{
+    width: 560px;
+}
+.mrw_dialogpanel .header
+{
+    background-color: #F0F2F4;
+    border-bottom: 1px solid #CCCCCC;
+    color: #4C5157;
+    font-family: 'Open Sans' ,Arial,Helvetica,Sans-Serif;
+    font-size: 23px;
+    line-height: 32px;
+    padding: 16px 30px;
+    text-align: center;
+}
+
+.mrw_dialogpanel .header.left
+{
+    text-align: left;
+}
+
+.mrw_dialogpanel.small .header, .mrw_dialogpanel.mini .header
+{
+}
+
+.mrw_dialogpanel .content
+{
+    font-size: 16px;
+    padding: 20px 30px;
+}
+
+.mrw_dialogpanel .contentSecondary
+{
+    font-size: 14px;
+}
+
+.mrw_dialogpanel.small .content, .mrw_dialogpanel.mini .content
+{
+}
+
+.mrw_dialogpanel .UserTitle {
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.btnDialogClose
+{
+    background: transparent;
+    background-image: url('//www.myregistry.com/images/graph_2.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 40px;
+    width: 40px;
+    background-position: -2px -42px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 1;
+}
+.mrw_dialogpanel .btnDialogClose
+{
+    background: transparent;
+    background-image: url('//www.myregistry.com/images/graph_2.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 40px;
+    width: 40px;
+    background-position: -2px -42px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Substyle of mrw_dialogpanel*/
+.mrw_dialogpanel .mrw_dialogfeature
+{
+    margin: 0 -20px;
+}
+.mrw_dialogpanel .mrw_dialogfeature:before
+{
+    background-image: url('//www.myregistry.com/images/panels/newfeatures/top_ribbon.png');
+    background-repeat: no-repeat;
+    display: block;
+    content: "";
+    position: absolute;
+    height: 49px;
+    width: 232px;
+    left: 50%;
+    margin-left: -116px;
+    position: absolute;
+    top: -29px;
+}
+
+.mrw_dialogpanel .mrw_dialogfeature .subheader
+{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 140px;
+}
+.mrw_dialogpanel .mrw_dialogfeature .subcontent
+{
+    text-align: center;
+    position: relative;
+}
+.mrw_dialogpanel .mrw_dialogfeature .subcontent:after
+{
+    background-image: url('//www.myregistry.com/images/panels/newfeatures/shadow.png');
+    background-repeat: no-repeat;
+    display: block;
+    content: "";
+    position: absolute;
+    height: 31px;
+    width: 746px;
+    position: absolute;
+    bottom: -51px;
+    left: 50%;
+    margin-left: -373px;
+}
+.mrw_dialogpanel .mrw_dialogfeature .subcontent .banner
+{
+    background-image: url('//www.myregistry.com/images/panels/newfeatures/new_feature_banner.png');
+    background-repeat: no-repeat;
+    display: block;
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 188px;
+    left: -31px;
+    top: -50px;
+    position: absolute;
+}
+/* v2 */
+.mrw_dialogpanel.v2 {
+    width: 800px;
+    -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    border: 0px solid #cccccc;
+    background: #ffffff;
+    margin: auto;
+    position: relative;
+    border-radius: 6px;
+}
+.mrw_dialogpanel.v2 .header
+{
+    font-family: "Lato" ,Arial,Helvetica,sans-serif;
+    font-weight: 300;
+    color: #363e50;
+    font-size: 20px;
+    background: none;
+    text-align: left;
+    padding: 11px 30px;
+}
+.mrw_dialogpanel.v2 .btnDialogClose
+{
+    background: transparent;
+    background-image: url('//www.myregistry.com/images/graph_2.png');
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 24px;
+    height: 24px;
+    background-position: -77px -243px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    margin: 35px 50px;
+}
+.mrw_dialogpanel.v2.sbig
+{
+    width: 900px;
+}
+.mrw_dialogpanel.v2.standard
+{
+    width: 800px;
+}
+.mrw_dialogpanel.v2.small
+{
+    width: 670px;
+}
+.mrw_dialogpanel.v2.mini
+{
+    width: 540px;
+}
+.mrw_dialogpanel.v2.xsmall
+{
+    width: 320px;
+}
+.mrw_dialogpanel.v2.checklist
+{
+    width: 435px;
+}
+.mrw_dialogpanel.v2.youtube
+{
+    width: 560px;
+}
+
+.mrw_dialogpanel .spacet
+{
+    margin-top: 10px;
+}
+
+.mrw_dialogpanel .spacer
+{
+    margin-right: 10px;
+}
+
+.mrw_dialogpanel .spaceb
+{
+    margin-bottom: 10px;
+}
+
+.mrw_dialogpanel .spacel
+{
+    margin-left: 10px;
+}
+
+.mrw_dialogpanel .spacelr
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mrw_dialogpanel .spacetb
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Summer Styles ------------------------------- */
+.mrw_dialogpanel .smr_inputtext_labels
+{
+    letter-spacing: .3px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 2px 0;
+}
+
+.mrw_dialogpanel .smr_inputtext
+{
+    border: 1px solid #cccccc;
+    color: #3e4348;
+    padding: 3px 10px;
+    resize: none;
+    height: 36px;
+    font-family: 'Lato', Arial, Helvetica, Sans-Serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .3px;
+    background-color: #ffffff;
+    outline: 0px none;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.mrw_dialogpanel .smr_button
+{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    color: #4cb9a3;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    background: transparent;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 8px 20px;
+    -webkit-transition: all 250ms ease, visibility 0s;
+    -ms-transition: all 250ms ease, visibility 0s;
+    transition: all 250ms ease, visibility 0s;
+}
+.mrw_dialogpanel .smr_button.blue
+{
+    background: #4cb9a3;
+    color: #ffffff;
+    border: 1px solid #4cb9a3;
+}
+
+.mrw_dialogpanel .smr_button.blue:hover
+{
+    background: #c1f5eb;
+    border-color: #c1f5eb;
+    color: #058471;
+}
+
+/* Exceptions ---------------------------------- */
+#pnlMarkAsAvailablePanel .mrw_dialogpanel.v2,
+#pnlMarkAsAvailablePanel .mrw_dialogpanel.v2 .header
+{
+    text-align: center !important;
+}
+
+#pnlMarkAsAvailablePanel .mrw_dialogpanel.v2 .ca
+{
+    margin-bottom: 5px;
+}
+
+#visitorviewimage .mrw_dialogpanel
+{
+    left: 0 !important;
+    top: 0 !important;
+}
+
+
+
+
+@media only screen and (max-width : 670px)
+{
+    /* PopUp small */
+    .mrw_dialogpanel.v2.small
+    {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+
+@media only screen and (max-width : 540px)
+{
+
+    /* PopUp mini */
+    .mrw_dialogpanel.v2.mini
+    {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+/*------ END - Dialog Panel -------------*/
+
+.mrw_messagepanel
+{
+    background: rgba(86,144,208,1);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF !important;
+    font-size: 19px;
+    left: 50%;
+    margin-left: -165px;
+    margin-top: -20px;
+    display: none;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 300px;
+    z-index: 2147483647;
+}
+
+.mrw_messagepanel.error
+{
+    border: none !important;
+    box-shadow: none !important; /*border: 5px solid orange;*/
+}
+.mrw_messagepanel.popuperror
+{
+    border: none !important;
+    box-shadow: none !important; /*border: 5px solid orange;*/
+    position: absolute;
+}
+.mrw_messagepanel.toperror
+{
+    border: none !important;
+    box-shadow: none !important; /*border: 5px solid orange;*/
+    top: 80px;
+}
+.mrw_messagepanelbox
+{
+    background: rgb(86,144,208);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFFFFF !important;
+    font-size: 15px;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -20px;
+    display: none;
+    padding: 30px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 280px;
+    z-index: 2147483647;
+    opacity: 0.85;
+}
+.mrw_messagepanelbox .closeBtn
+{
+    position: absolute;
+    top: 0px;
+    left: 320px;
+}
+.mrw_messagepanelbox .closeBtn:hover, .mrw_messagepanelbox .closeBtn:active, .mrw_messagepanelbox .closeBtn:link, .mrw_messagepanelbox .closeBtn:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+.mrw_dialogpanel .error
+{
+    -moz-box-shadow: 0 0 0 1px orange;
+    -webkit-box-shadow: 0 0 0 1px orange;
+    box-shadow: 0 0 0 1px orange;
+    border: 1px solid orange !important;
+}
+
+:-moz-ui-invalid:not(output)
+{
+    -moz-box-shadow: 0 0 0 2px orange;
+    -webkit-box-shadow: 0 0 0 2px orange;
+    box-shadow: 0 0 0 2px orange;
+}
+
+/* -- Media < */
+@media only screen and (max-height : 768px)
+{
+
+    .cwx_dialogpanel .content .wideImage
+    {
+        height: 310px;
+    }
+
+    .cwx_dialogpanel .content .wideImage img
+    {
+        max-height: 310px;
+    }
+}
+
+.mrw_master_footer
+{
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* Checkbox */
+.mrw_dialogpanel input.mrw_inputcheck[type="checkbox"], input.mrw_inputcheck_notext[type="checkbox"]
+{
+    padding: 0;
+    margin: 0;
+    height: 16px;
+    width: 16px;
+    float: left;
+    left: 0;
+    opacity: 0;
+}
+
+.mrw_dialogpanel input.mrw_inputcheck[type="checkbox"] + label, input.mrw_inputcheck_notext[type="checkbox"] + label
+{
+    font-size: 13px;
+    padding: 0 0 0 7px;
+    margin-left: -18px;
+}
+
+.mrw_dialogpanel input.mrw_inputcheck.disabled[type="checkbox"] + label, input.mrw_inputcheck_notext.disabled[type="checkbox"] + label
+{
+    opacity: 0.5;
+    pointer-events: none;
+}
+.mrw_dialogpanel input.mrw_inputcheck[type="checkbox"] + label:before
+{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(/images/graph_2.png) -772px -54px no-repeat;
+    cursor: pointer;
+    content: "";
+}
+
+.mrw_dialogpanel input.mrw_inputcheck[type="checkbox"]:checked + label:before
+{
+    background: url(/images/graph_2.png) -812px -54px no-repeat;
+}
+
+.mrw_dialogpanel input.mrw_inputcheck_notext[type="checkbox"] + label
+{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(/images/graph_2.png) -772px -54px no-repeat;
+    cursor: pointer;
+    content: "";
+}
+
+.mrw_dialogpanel input.mrw_inputcheck_notext[type="checkbox"]:checked + label
+{
+    background: url(/images/graph_2.png) -812px -54px no-repeat;
+}
+
+/* Radio  TODO Radio needs another graphic !! */
+.mrw_dialogpanel input[type="radio"].mrw_inputradio
+{
+    display: none;
+}
+
+.mrw_dialogpanel input[type="radio"].mrw_inputradio + label
+{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.mrw_dialogpanel input[type="radio"].mrw_inputradio + label:before
+{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    background: url(/images/graph_2.png) -772px -54px no-repeat;
+    cursor: pointer;
+    content: "";
+}
+
+.mrw_dialogpanel input[type="radio"].mrw_inputradio:checked + label:before
+{
+    background: url(/images/graph_2.png) -812px -54px no-repeat;
+}
+
+/*#endregion*/
+
+

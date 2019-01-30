@@ -20,6 +20,7 @@
   "homepage": "https://github.com/PxlBuzzard/wedding-website",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-connect": "^5.7.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.1"

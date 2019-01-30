@@ -20,7 +20,12 @@ Add some pictures of Lionel.
 
 The Knot embed
 
-## Guest Book
+## RSVP
+
+Add a picture of Lionel.
+Link to registry.
+
+Autocomplete using people's names and autofill number of guests allowed (can input less than or equal).
 
 ### CSS
 

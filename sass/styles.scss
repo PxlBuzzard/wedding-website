@@ -8,7 +8,7 @@
 @import "partials/buttons";
 @import "partials/colors";
 
-$section-padding: 40px 0;
+$section-padding: 20px 0;
 
 /* ==========================================================================
 Global Styles
@@ -55,10 +55,14 @@ ul, ol {
 ul li {
   list-style: none;
 }
-section:nth-child(2n+3) {
-  background: $section-light;
-}
 section:nth-child(2n+2) {
+  background: $section-light;
+  color: $section-dark;
+  h3 {
+    color: $txt-light;
+  }
+}
+section:nth-child(2n+1) {
   background: $section-dark;
 }
 section .header {
@@ -168,7 +172,7 @@ Animations
 }
 
 /* ==========================================================================
-Waypoinsts
+Waypoints
 ========================================================================== */
 .wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9 {
   visibility: hidden
@@ -257,12 +261,21 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/eng_pics/image79.jpg') center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  position: relative;
+  // background: url('../img/eng_pics/image79.jpg') center center;
+  // background-repeat: no-repeat;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // background-size: cover;
+
+  // background-color: transparent;
+  // background-image: url(https://d3t14gfu9ehll4.cloudfront.net/themes/e056f0f8-4671-45a7-a579-5a2fd1ab4040/undefined_ICSrZNT.png), none;
+  // background-position: center top, left top;
+  // background-repeat: no-repeat, repeat;
+  // position: relative;
+
+  // background-image: url(https://d3t14gfu9ehll4.cloudfront.net/themes/e056f0f8-4671-45a7-a579-5a2fd1ab4040/undefined_Wg572MC.png);
+  // background-repeat: repeat;
+  // background-position: center center;
 
   /*.rsvp-btn {
     position: absolute;
@@ -274,7 +287,10 @@ Hero
   }
   h1 {
     color: $txt-light;
+    text-shadow: $txt-secondary 2px 2px;
     margin-bottom: 40px;
+    font-family: 'Courgette', cursive;
+    display: inline;
   }
   p.intro {
     color: $txt-light;
@@ -283,11 +299,11 @@ Hero
     margin-bottom: 80px;
   }
   .hero-content {
-    padding-top: 40%;
+    padding-top: 15%;
   }
   .hero-content img {
-    width: 55%;
-    margin-bottom: 12%;
+    width: 100px;
+    margin: 0 20px 20px 20px;
   }
 }
 .navigation {
@@ -295,17 +311,18 @@ Hero
   position: fixed;
   width: 100%;
   z-index: 999;
-  background: rgba(36, 36, 36, .6);
+  // background: rgba(36, 36, 36, .6);
+  background: $accent-color !important;
 }
 .fixed {
   position: fixed;
-  background-color: rgba(36, 36, 36, .88);
+  // background-color: rgba(36, 36, 36, .88);
   z-index: 999;
   width: 100%;
 }
 header {
-  padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  padding: 40px 0 20px 0;
+  border-bottom: solid 1px #fff;
   position: relative;
   width: 1170px;
   margin: 0 auto;
@@ -322,13 +339,25 @@ header {
   }
   .logo {
     display: inline-block;
-  }
-  .logo img {
-    height: 19px;
+
+    h2 {
+      color: white;
+      text-shadow: $section-dark 2px 2px;
+      font-family: 'Courgette', cursive;
+      display: inline-block;
+      margin: 0;
+    }
+    img {
+      height: 40px;
+      vertical-align: top;
+    }
   }
   ul.primary-nav {
-    margin: 0 0 0 75px;
+    margin: 0 0 0 50px;
     padding: 0;
+    height: 40px;
+    top: -10px;
+    position: relative;
 
     li {
       display: inline;
@@ -368,6 +397,10 @@ header {
     top: 41px;
     transition: all 300ms ease-in-out;
   }
+}
+.hero-image {
+  border: 8px solid #fff;
+  margin-bottom: 20px;
 }
 .down-arrow {
   color: #fff;
@@ -410,9 +443,9 @@ Intro
 #intro {
   //position: absolute;
   //bottom: 0;
-  background: repeat-x url('../img/flowers2.png');
-  background-size: 291px 100px;
-  background-position: bottom;
+  // background: repeat-x url('../img/flowers2.png');
+  // background-size: 291px 100px;
+  // background-position: bottom;
   //width: 1000px;
   //height: 100px;
 
@@ -423,10 +456,10 @@ Intro
     height: 500px;
   }
   img.nikky {
-    margin-top: 100px;
+    margin-top: 125px;
   }
   img.daniel {
-    height: 600px;
+    height: 625px;
   }
 }
 #intro p {
@@ -538,6 +571,12 @@ Features-stack
   max-height: 550px;
 }
 
+#registry {
+  .btn {
+    margin-top: 20px;
+  }
+}
+
 /* ==========================================================================
 .hero-strip
 ========================================================================== */
@@ -593,79 +632,6 @@ Features-stack
     font-style: italic;
     text-transform: lowercase;
     color: $txt-primary;
-  }
-}
-
-/* ==========================================================================
-.blog
-========================================================================== */
-.blog {
-  padding-bottom: 120px;
-
-  img {
-    width: 100%;
-    height: auto;
-    -moz-transition: all 300ms ease-in-out;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-  }
-  h2 {
-    font-size: $blog-post-title;
-    color: $txt-accent;
-    font-weight: $semibold;
-    text-transform: uppercase;
-    margin-top: 35px;
-  }
-  .btn {
-    margin-top: 20px;
-  }
-  .blog-img-wrap {
-    position: relative;
-    overflow: hidden;
-
-    .overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: rgba($white-color, 0.5);
-      -moz-transition: all 300ms ease-in-out;
-      -webkit-transition: all 300ms ease-in-out;
-      transition: all 300ms ease-in-out;
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-      filter: alpha(opacity=0);
-      opacity: 0;
-    }
-    i {
-      color: $white-color;
-      font-size: 20px;
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      top: 25px;
-      right: 35px;
-    }
-  }
-  .blog-img-wrap:hover img, .blog-img-wrap:focus img {
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-  .blog-img-wrap:hover .overlay, .blog-img-wrap:focus .overlay {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
-    filter: alpha(opacity=1);
-    opacity: 1;
-    z-index: 9;
-  }
-  figcaption i {
-    margin-left: 5px;
-    font-size: 15px;
-  }
-  figcaption a.blog-post-title {
-    color: $txt-primary;
-  }
-  figcaption a.blog-post-title:hover, figcaption a.blog-post-title:focus {
-    color: $txt-secondary;
   }
 }
 
@@ -746,6 +712,43 @@ Engagement Pics
   }
 }
 
+#wedding-party {
+  img {
+    vertical-align: center;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  h3.header {
+    margin-top: 20px;
+  }
+  .col-md-4:nth-child(2n) h4,
+  .col-md-4:nth-child(2n) p {
+    text-align: right;
+  }
+  .border-left {
+    border-left: 1px solid white;
+  }
+  .border-right {
+    border-right: 1px solid white;
+  }
+}
+
+@media(max-width:991px){
+#wedding-party {
+  .col-md-4:nth-child(2n+1) {
+    border-left: none;
+  }
+  .col-md-4:nth-child(2n) h4,
+  .col-md-4:nth-child(2n) p {
+    text-align: left;
+  }
+  .border-left {
+    border: none;
+  }
+}
+}
+
 /* ==========================================================================
 Embed video
 ========================================================================== */
@@ -771,7 +774,7 @@ Embed video
 }
 
 /* ==========================================================================
-Google map
+Open Street Map
 ========================================================================== */
 #map-canvas {
   height: 500px;
@@ -812,10 +815,11 @@ Google map
 RSVP form
 ========================================================================== */
 .rsvp {
-  padding-bottom: 140px;
+  padding-bottom: 50px;
   .rsvp-form {
     .rsvp-btn {
       padding: 15px 0;
+      margin-bottom: 50px;
       border-radius: 3px;
       width: 100%;
       font-size: 13px;
@@ -912,10 +916,17 @@ footer {
     margin-top: -5px;
   }
   span.fa-heart {
-    color: #ff415c;
     font-size: 18px;
     margin: 0 2px;
   }
+}
+
+.fa-heart {
+  color: #ff415c;
+}
+
+.fa-angle-up {
+  color: #fff;
 }
 
 /* ==========================================================================
