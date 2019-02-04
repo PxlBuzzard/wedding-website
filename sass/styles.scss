@@ -191,7 +191,6 @@ Navigation
 .header-nav.open {
   visibility: visible;
   opacity: 0.9;
-  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 .nav-toggle {
@@ -211,8 +210,6 @@ Navigation
   display: block;
   width: 35px;
   height: 3px;
-  -moz-border-radius: 1px;
-  -webkit-border-radius: 1px;
   border-radius: 1px;
   background: #fff;
   cursor: pointer
@@ -224,8 +221,6 @@ Navigation
   bottom: -10px
 }
 .nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
-  -moz-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out
 }
 .nav-toggle.active span {
@@ -235,23 +230,17 @@ Navigation
   top: 0
 }
 .nav-toggle.active span:before {
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg)
 }
 .nav-toggle.active span:after {
   top: 10px;
-  -moz-transform: translatey(-10px) rotate(-45deg);
-  -ms-transform: translatey(-10px) rotate(-45deg);
-  -webkit-transform: translatey(-10px) rotate(-45deg);
   transform: translatey(-10px) rotate(-45deg)
 }
 .navicon {
   position: absolute;
   height: 26px;
   right: 10px;
-  top: 48px;
+  top: 10px;
   visibility: hidden;
   transition: all 300ms ease-in-out;
 }
@@ -260,7 +249,7 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
+  // min-height: 750px;
   // background: url('../img/eng_pics/image79.jpg') center center;
   // background-repeat: no-repeat;
   // -webkit-background-size: cover;
@@ -657,6 +646,9 @@ Engagement Pics
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
   }
+  .col-sm-12 {
+    margin-bottom: 10px;
+  }
   .img-wrap {
     position: relative;
     overflow: hidden;
@@ -722,29 +714,21 @@ Engagement Pics
   h3.header {
     margin-top: 20px;
   }
-  .col-md-4:nth-child(2n) h4,
-  .col-md-4:nth-child(2n) p {
+  .col-md-4 {
     text-align: right;
-  }
-  .col-md-4:nth-child(2n+1) h4,
-  .col-md-4:nth-child(2n+1) p {
-    text-align: left;
   }
   .border-left {
     border-left: 1px solid white;
-  }
-  .border-right {
-    border-right: 1px solid white;
+    text-align: left;
   }
 }
 
-@media(max-width:991px){
+@media(max-width:991px) {
 #wedding-party {
   .col-md-4:nth-child(2n+1) {
     border-left: none;
   }
-  .col-md-4:nth-child(2n) h4,
-  .col-md-4:nth-child(2n) p {
+  .col-md-4:nth-child(2n) {
     text-align: left;
   }
   .border-left {
@@ -783,6 +767,10 @@ Open Street Map
 #map-canvas {
   height: 500px;
   width: 100%;
+
+  img {
+    height: 415px;
+  }
 }
 #map-content-wrapper {
   position: relative;
@@ -896,13 +884,13 @@ footer {
   background: $section-dark;
   .content {
     border-top: 1px solid $keyline-secondary;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
   .to-top-wrapper {
     font-size: 30px;
     display: block;
     cursor: pointer;
-    margin: -25px auto 50px;
+    margin: -25px auto 10px;
     border-radius: 50%;
     width: 50px;
     height: 50px;

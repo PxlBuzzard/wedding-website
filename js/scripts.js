@@ -54,16 +54,17 @@ $(document).ready(function () {
     });
 
     /***************** Initiate Fancybox ******************/
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        $('.single_image').fancybox({
+            padding: 4
+        });
 
-    $('.single_image').fancybox({
-        padding: 4
-    });
-
-    $('.fancybox').fancybox({
-        padding: 4,
-        width: 1000,
-        height: 800
-    });
+        $('.fancybox').fancybox({
+            padding: 4,
+            width: 1000,
+            height: 800
+        });
+    }
 
     /***************** Tooltips ******************/
     $('[data-toggle="tooltip"]').tooltip();
@@ -89,30 +90,32 @@ $(document).ready(function () {
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
 
-            if (scroll >= 20) {
-                $('section.navigation').addClass('fixed');
-                $('header').css({
-                    //"border-bottom": "none",
-                    "padding": "16px 0 0 0"
-                });
-                $('header .member-actions').css({
-                    "top": "16px",
-                });
-                $('header .navicon').css({
-                    "top": "14px",
-                });
-            } else {
-                $('section.navigation').removeClass('fixed');
-                $('header').css({
-                    "border-bottom": "solid 1px #fff",
-                    "padding": "40px 0 20px 0"
-                });
-                $('header .member-actions').css({
-                    "top": "41px",
-                });
-                $('header .navicon').css({
-                    "top": "48px",
-                });
+            if (window.matchMedia("(min-width: 992px)").matches) {
+                if (scroll >= 20) {
+                    $('section.navigation').addClass('fixed');
+                    $('header').css({
+                        //"border-bottom": "none",
+                        "padding": "16px 0 0 0"
+                    });
+                    $('header .member-actions').css({
+                        "top": "16px",
+                    });
+                    $('header .navicon').css({
+                        "top": "14px",
+                    });
+                } else {
+                    $('section.navigation').removeClass('fixed');
+                    $('header').css({
+                        "border-bottom": "solid 1px #fff",
+                        "padding": "40px 0 20px 0"
+                    });
+                    $('header .member-actions').css({
+                        "top": "41px",
+                    });
+                    $('header .navicon').css({
+                        "top": "48px",
+                    });
+                }
             }
         });
     });
