@@ -820,8 +820,6 @@ RSVP form
       width: 100%;
       height: 55px;
       margin: 0 auto 10px;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
       border-radius: 5px;
       border: solid 1px $keyline-color;
       text-align: left;
@@ -841,36 +839,23 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa {
         font-size: 14px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
         margin-left: 20px;
       }
-      input {
+      input, select {
         padding-left: 68px;
         width: 100%;
         height: 100%;
-        -moz-border-radius: 6px;
-        -webkit-border-radius: 6px;
         border-radius: 6px;
         border: none;
         color: $section-dark;
       }
-      input::-webkit-input-placeholder {
-        color: $form-placeholder;
-      }
-      input:-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input::-moz-placeholder {
-        color: $form-placeholder;
-      }
-      input:-ms-input-placeholder {
-        color: $form-placeholder;
-      }
-      input::placeholder {
+      input::placeholder,
+      select::placeholder {
         color: $form-placeholder;
       }
     }
@@ -925,9 +910,10 @@ footer {
 Bootstrap override
 ========================================================================== */
 body.modal-open {
-  padding-right:0 !important;
+  padding-right: 0 !important;
 }
+
 .modal-body {
   padding:25px;
-  background: $section-light;
+  background: $section-dark;
 }

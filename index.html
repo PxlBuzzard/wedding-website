@@ -51,7 +51,7 @@
 
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <li><a href="#rsvp" class="btn btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -134,8 +134,8 @@
                 <div class="wp3">
                     <p><strong>May 9th, 2019</strong></p>
 
-                    <h5>Rehearsal <span class="time">5PM - 10PM</span></h5>
-                    <p>Wedding rehearsal to begin at WithinSodo and dinner at TBD.</p>
+                    <h5>Rehearsal <span class="time">6:30PM - 10PM</span></h5>
+                    <p>Wedding rehearsal to begin at WithinSodo with dinner following at Pyramid Brewing.</p>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
@@ -145,10 +145,6 @@
                     <h5>Wedding <span class="time">5PM-11PM</span></h5>
                     <p>The main event!</p>
                 </div>
-                <!-- <div class="wp6">
-                    <h5>Wedding <span class="time">5PM-11PM</span></h5>
-                    <p>The main event!</p>
-                </div> -->
             </div>
         </div>
         <div class="row section-padding">
@@ -158,10 +154,6 @@
                 </a>
             </div>
         </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
     </div>
 
     <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -183,6 +175,7 @@
                         <strong>Wedding formal / bohemian</strong>
                         <br>
                         Ladies, formal and <a href="https://www.pinterest.com/search/pins/?q=bohemian%20dresses&rs=typed&term_meta[]=bohemian%7Ctyped&term_meta[]=dresses%7Ctyped">bohemian dresses</a> are welcome.
+                        Men, suits are great and otherwise make yourself look nice.
                     </p>
                 </div>
             </div>
@@ -206,7 +199,7 @@
         <div class="row">
             <div class="col-sm-4"></div>
             <div class="col-sm-4 text-center">
-                <a href="//www.myregistry.com/wedding-registry/Daniel-Jost-and-Nikky-Nobis-Redmond-WA/1795393" class="btn btn-large rsvp-btn" target="_blank">See the full registry</a>
+                <a href="//www.myregistry.com/wedding-registry/Daniel-Jost-and-Nikky-Nobis-Redmond-WA/1795393" class="btn btn-white btn-large" target="_blank">See the full registry</a>
             </div>
             <div class="col-sm-4"></div>
         </div>
@@ -597,51 +590,54 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3 class="header">What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before April 30th, 2019</p>
+                <p>We would greatly appreciate if you could RSVP before April 11th, 2019</p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" name="email" class=""
+                                    placeholder="Your email"
+                                    required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
+                                <i class="fa fa-user"></i>
+                                <input name="name" class=""
+                                    placeholder="Your name"
+                                    required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="7"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
+                                <i class="fa fa-users"></i>
+                                <input type="number" name="guests" class="" min="0"
+                                    max="7"
+                                    placeholder="Number of guests"
+                                    required>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
+                                <i class="fa fa-heart"></i>
+                                <select name="dietary" class="form-control">
+                                    <option value="none">Dietary restrictions?</option>
+                                    <option value="glutenfree">Gluten-free</option>
+                                    <option value="vegetarian">Vegetarian</option>
+                                    <option value="vegan">Vegan</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12" id="alert-wrapper"></div>
                     </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
+                    <button class="btn-fill rsvp-btn">Yes,that's me!</button>
                 </form>
             </div>
             <div class="col-md-4 col-md-offset-4">
