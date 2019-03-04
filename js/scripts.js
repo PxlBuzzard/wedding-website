@@ -204,7 +204,7 @@ $(document).ready(function () {
             })
             .fail(function (data) {
                 console.log(data);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. Contact Daniel to let him know.'));
+                $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server or you have <i>script.google.com</i> blocked. Contact Daniel to let him know.'));
             });
         // }
     });

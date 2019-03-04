@@ -1,7 +1,7 @@
 # Wedding Website
 
 A beautiful, feature rich, device friendly wedding website.
-_See [nikkyanddaniel.thejosts.com](http://nikkyanddaniel.thejosts.com/) for the hosted site.
+_See [nikkyanddaniel.thejosts.com](http://nikkyanddaniel.thejosts.com/) for the hosted site._
 
 ## Highlights
 

@@ -356,7 +356,7 @@ header {
         padding-right: 25px;
 
         &:hover {
-          color: $accent-color;
+          color: $section-dark;
         }
       }
       &:last-child a {
@@ -372,7 +372,7 @@ header {
         color: $txt-light;
 
         &:hover {
-          color: $accent-color;
+          color: $section-dark;
         }
       }
     }
@@ -622,6 +622,10 @@ Features-stack
     text-transform: lowercase;
     color: $txt-primary;
   }
+}
+
+#myregsitry_embeded_iframe {
+  height: 700px !important;
 }
 
 /* ==========================================================================
@@ -914,6 +918,6 @@ body.modal-open {
 }
 
 .modal-body {
-  padding:25px;
+  padding: 25px;
   background: $section-dark;
 }
