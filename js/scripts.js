@@ -162,10 +162,10 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Daniel and Nikky's Wedding",
+            title: "Nikky and Daniel's Wedding",
 
             // Event start date
-            start: new Date('May 11, 2019 18:00'),
+            start: new Date('May 11, 2019 17:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -178,7 +178,7 @@ $(document).ready(function () {
             address: 'WithinSodo, Seattle WA',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues contact Britta Jackson at 123-456-7890."
+            description: "We can't wait to see you on our big day. For any queries or issues contact our coordinator, Britta Jackson, at (425) 591-5606."
         }
     });
 
