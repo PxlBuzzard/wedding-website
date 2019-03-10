@@ -920,4 +920,12 @@ body.modal-open {
 .modal-body {
   padding: 25px;
   background: $section-dark;
+  color: #fff;
+}
+.close {
+  color: #fff;
+  font-size: 48px;
+  margin-top: -14px;
+  margin-left: -36px;
+  opacity: .8;
 }
