@@ -61,6 +61,13 @@ section:nth-child(2n+2) {
   h3 {
     color: $txt-light;
   }
+  a {
+    color: #fff;
+
+    &:hover {
+      color: #000;
+    }
+  }
 }
 section:nth-child(2n+1) {
   background: $section-dark;
