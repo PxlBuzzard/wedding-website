@@ -135,6 +135,10 @@
         transition-delay: 0.3s
     }
 
+    nav ul.primary-nav li:nth-child(7) {
+        transition-delay: 0.35s
+    }
+
     .intro-content {
         display: inline-block;
         width: 75%;
@@ -256,7 +260,6 @@
 
     .hero .btn {
         display: block;
-        width: 80%;
         margin: 0 auto;
     }
 
